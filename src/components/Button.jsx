@@ -1,9 +1,11 @@
-const Button = ({ onClick, label, value }) => {
+const Button = ({ onClick, label, value, isFiller, color }) => {
   return (
     <div
       onClick={onClick}
       value={value}
-      className="p-4 bg-white text-center flex-1"
+      className={`font-orbitron p-4 text-center border-[.5px] border-slate-300 cursor-pointer
+      ${color ? `bg-[${color}]` : "bg-[#F6F3FF] hover:bg-[#E0D9EC] "} 
+      ${isFiller ? "flex-grow min-h-0 flex items-center justify-center" : ""}`}
     >
       {label}
     </div>
