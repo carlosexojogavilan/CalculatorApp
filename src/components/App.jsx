@@ -41,8 +41,8 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen flex flex-col justify-center items-center bg-red-300 px-8">
-        <h1 className="text-4xl font-semibold">Calculator App</h1>
+      <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] px-8">
+        <h1 className="text-4xl font-semibold text-white">Calculator App</h1>
         <div className="max-w-sm w-full m-8 rounded-t-xl border-[1px] border-slate-400">
           <DisplayArea data={operations}></DisplayArea>
           <ButtonsArea>
@@ -112,7 +112,7 @@ function App() {
             </div>
           </ButtonsArea>
         </div>
-        <h3>Made by Carlos Exojo</h3>
+        <h3 className="text-white">Made by Carlos Exojo</h3>
       </div>
     </>
   );
